@@ -3,7 +3,8 @@ The Precision Audiophile Library Manager & Diagnostic Tool**
 
 TrueSonix is a powerful desktop utility designed to deep-scan, diagnose, and curate massive music libraries. Built for audiophiles who demand perfect metadata and audio fidelity, TrueSonix analyzes tracks for clipping, calculates LUFS ReplayGain, spots "fake" upscaled lossless files, and provides an entire suite of bulk-tagging tools.
 
-Fun Fact: TrueSonix was conceptualized, designed, and fully coded over a single weekend using AI Pair Programming!
+**Fun Fact: TrueSonix was conceptualized, designed, and fully coded over a single weekend using AI Pair Programming!
+**
 
 ✨ Key Features
   Deep Audio Diagnostics: 

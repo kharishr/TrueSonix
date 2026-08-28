@@ -55,23 +55,6 @@ TrueSonix is packaged as a ready-to-use, standalone Windows executable.
 
 ---
 
-## 📸 Screenshots
-
-*(Tip: Drag and drop your screenshots directly into the GitHub editor below these headers to upload them!)*
-
-**The Diagnostics Dashboard**
-<!-- Drop your main app screenshot here -->
-
-**Detecting Upscaled Fakes (Frequency Spectrogram)**
-<!-- Drop your spectrogram screenshot here -->
-
-**Unified Entity Manager & Fuzzy Spell Check**
-<!-- Drop your artist cleanup screenshot here -->
-
-**Tag Studio**
-<!-- Drop your Tag Studio screenshot here -->
-
----
 
 ## 🛠️ Under the Hood
 For developers curious about the stack, TrueSonix is written in **Python 3** and utilizes:

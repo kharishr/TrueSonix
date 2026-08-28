@@ -1,57 +1,57 @@
 <div align="center">
   
-# 🎧 TrueSonix 
+<!-- Replace the src link with the actual raw GitHub link to your icon if it doesn't load automatically -->
+<img src="app_icon.png" width="80" alt="TrueSonix Logo">
+
+# TrueSonix 
 **The Precision Audiophile Library Manager & Diagnostic Tool**
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-Windows-lightgray)
-![License](https://img.shields.io/badge/License-MIT-green)
+<!-- Functionality Badges (Modern Sharp Edges) -->
+![Audio Diagnostics](https://img.shields.io/badge/Audio_Diagnostics-0078D7?style=flat-square)
+![Lossless Verification](https://img.shields.io/badge/Lossless_Verification-005A9E?style=flat-square)
+![Metadata Curation](https://img.shields.io/badge/Metadata_Curation-003366?style=flat-square)
 
+<!-- Tech Stack Badges (Classic Rounded Edges) -->
+![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white&style=flat)
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows&logoColor=white&style=flat)
+![License](https://img.shields.io/badge/License-MIT-4CAF50?style=flat)
 </div>
 
-> *Fun Fact: TrueSonix was conceptualized, designed, and fully coded over a single weekend using AI Pair Programming!*
+> **The Origin Story:** I built TrueSonix out of pure frustration. I had thousands of audio files that needed serious curation, but existing tools fell short. Manually checking spectrograms for upscaled fakes took forever, and standard volume normalizers ruined the dynamics of my music. Instead of settling, I spent a weekend pair-programming with AI to build a custom solution. Two days and thousands of lines of Python later, TrueSonix was born.
 
-TrueSonix is a powerful desktop utility designed to deep-scan, diagnose, and curate massive music libraries. Built for audiophiles who demand perfect metadata and audio fidelity, TrueSonix analyzes tracks for clipping, calculates LUFS ReplayGain, spots "fake" upscaled lossless files, and provides an entire suite of bulk-tagging tools.
+TrueSonix is a standalone Windows desktop utility designed to deep-scan, diagnose, and curate massive music libraries. It gives you the analytical evidence and the batch-editing tools you need to clean up your collection and guarantee perfect audio fidelity.
 
 ---
 
 ## ✨ Key Features
 
-* 🔍 **Deep Audio Diagnostics:** Decodes audio waveforms to calculate True Peak, clipping percentage, LUFS ReplayGain, and Dynamic Range (TT-DR and LRA).
-* 🚨 **Lossless Authenticity Scanner:** Automatically detects frequency cutoffs to expose lossy files (like 128kbps MP3s) that have been falsely upscaled into FLAC or WAV formats. Right-click a track to view a generated **Frequency Spectrogram**.
-* 🧹 **Unified Entity Manager:** A dedicated tool to clean up messy Artist, Composer, and Lyricist tags. Features a **Fuzzy Spell Checker** (to easily merge "AR Rahman" and "A.R. Rahman") and a smart tool to split combined artists.
-* 🏷️ **Intelligent Tag Studio:** A massive bulk-editor for text fields (Genre, Album, Year, etc.). Includes Find & Replace, Overwrite, Append, Prefix, and quick-formatting (Title Case, Trim Spaces).
-* 🎚️ **Global Gain Override:** Manually shift the ReplayGain of a batch of tracks to match a specific baseline volume. Includes an "Auto-Fix" safety limiter to prevent clipping.
-* 💾 **Universal Compatibility:** Built with a brute-force ID3v2.3 saving mechanism, ensuring that tags saved to `.wav`, `.flac`, and `.mp3` files are 100% visible across Windows and all media players.
+### 🔍 Deep Audio Diagnostics
+* **Lossless Authenticity Scanner:** Stop guessing if your files are genuine. TrueSonix detects frequency cutoffs to expose lossy files (like 128kbps MP3s) falsely upscaled into FLAC or WAV formats. Generate high-resolution **Frequency Spectrograms** with a single right-click.
+* **Fidelity Metrics:** Decodes audio waveforms to calculate True Peak, clipping percentages, LUFS ReplayGain, and Dynamic Range (TT-DR and LRA).
+* **"Pest" Filter:** A one-click toggle to instantly isolate "Bad" or "Source Limited" files hidden deep inside massive libraries.
+
+### 🏷️ Ultimate Metadata Curation
+* **Unified Entity Manager:** A master-detail interface to clean up messy artist catalogs. Automatically split combined tags (e.g., "Artist A & Artist B") and use the **Fuzzy Spell Checker** to merge misspellings (like "AR Rahman" and "A.R. Rahman") across your entire library.
+* **Intelligent Tag Studio:** A massive bulk-editor for text fields with a dynamic preview. Includes Find & Replace, Overwrite, Append, Prefix, and quick-formatting (Title Case, Trim Spaces).
+* **Universal Compatibility:** Built with a custom, brute-force ID3v2.3 saving mechanism to ensure that tags saved to `.wav`, `.flac`, and `.mp3` files are 100% visible across Windows and all modern media players.
+
+### 🎚️ Global Gain Override
+* **Shift ReplayGain:** Manually shift the ReplayGain of a batch of tracks to match a specific baseline volume. 
+* **Clipping Protection:** Includes a clipping prediction engine and an "Auto-Fix" safety limiter that mathematically scales back tracks to prevent distortion before you save.
+
+### 🔒 Offline Analysis Mode
+* **Smart Imports:** Export your scan data to Excel/CSV. If you import a scan from a disconnected external drive, TrueSonix detects missing files and asks to enter Offline Mode.
+* **Virtual Folder Tree:** In Offline Mode, TrueSonix dynamically reconstructs your library's folder structure in memory, completely locking down all file editing capabilities so you can safely filter, view, and analyze massive datasets without risking accidental metadata writes.
 
 ---
 
 ## 🚀 Getting Started (No Installation Required)
 
-TrueSonix is packaged as a standalone executable. 
+TrueSonix is packaged as a ready-to-use, standalone Windows executable. 
 
-1. Go to the [Releases page](../../releases) on this GitHub repository.
+1. Navigate to the **[Releases](../../releases)** section on the right side of this repository.
 2. Download the latest `TrueSonix.exe` file.
-3. Double-click the `.exe` to run the application (no installation necessary).
-
----
-
-## 📖 Quick Usage Guide
-
-### 1. Scanning Your Library
-* **Folder:** Click in the top-left to select your music directory.
-* **Fast Scan:** Instantly reads existing ID3/FLAC metadata without opening the audio waveform.
-* **Deep Analyze:** Processes the actual audio files to calculate ReplayGain, True Peak, and check for upscaled fakes. *(Note: Takes longer on large libraries).*
-
-### 2. Filtering & Viewing Data
-* **Filter:** Select specific folders on the left pane to instantly filter the Diagnostics Table.
-* **Quick Filter:** Right-click any column header to quickly filter by specific genres, albums, or dynamic range scores. 
-* **Spectrogram:** Right-click any track in the table to view its full technical specifications or generate a visual Spectrogram.
-
-### 3. Fixing Tags & Volume
-* **Save Tags:** Highlight multiple tracks and select to embed the calculated ReplayGain and DR metrics directly into the files.
-* **Fix artist info:** Open the Master-Detail entity manager to clean up spelling mistakes across your library.
-* **Tag Studio:** Mass-update genres, albums, and years.
+3. Double-click the file to run the application instantly.
 
 ---
 
@@ -60,22 +60,22 @@ TrueSonix is packaged as a standalone executable.
 *(Tip: Drag and drop your screenshots directly into the GitHub editor below these headers to upload them!)*
 
 **The Diagnostics Dashboard**
-<!-- Drop image here -->
+<!-- Drop your main app screenshot here -->
 
-**Detecting Upscaled Fakes (Spectrogram)**
-<!-- Drop image here -->
+**Detecting Upscaled Fakes (Frequency Spectrogram)**
+<!-- Drop your spectrogram screenshot here -->
 
-**Unified Entity Manager**
-<!-- Drop image here -->
+**Unified Entity Manager & Fuzzy Spell Check**
+<!-- Drop your artist cleanup screenshot here -->
 
 **Tag Studio**
-<!-- Drop image here -->
+<!-- Drop your Tag Studio screenshot here -->
 
 ---
 
 ## 🛠️ Under the Hood
 For developers curious about the stack, TrueSonix is written in **Python 3** and utilizes:
-* `tkinter` / `sv_ttk` for the GUI.
+* `tkinter` / `sv_ttk` for the sleek, dark-mode Windows 11 GUI.
 * `mutagen` for robust audio metadata read/write operations.
 * `soundfile` and `numpy` for fast audio decoding and matrix operations.
 * `pyloudnorm` for ITU-R BS.1770-4 loudness compliance.
@@ -83,5 +83,9 @@ For developers curious about the stack, TrueSonix is written in **Python 3** and
 
 ---
 
-## 🤝 Feedback & Contributions
-If you encounter a bug, have a feature request, or just want to say hi, feel free to open an **Issue** on this repository!
+## 🤝 Support & Connect
+
+If this tool helped you organize your massive library, saved you hours of manual tagging, or rescued your sanity, I'd love to hear about it! 
+
+Drop a thanks, let me know how it worked for you, or connect with me on LinkedIn: 
+**[Harish Reddy](https://www.linkedin.com/in/hareesh-reddy/)**
